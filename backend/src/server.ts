@@ -1,6 +1,7 @@
+import { PORT } from './config'
 import app from "./app";
 
-const PORT = process.env.PORT || 5000
-app.listen(PORT,()=>{
+const port = PORT || 5000
+app.listen(port,()=>{
     console.log(`server is running on port ${PORT}`)
 })
