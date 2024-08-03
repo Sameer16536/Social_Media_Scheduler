@@ -44,6 +44,17 @@ interface ScheduledPost {
             ))}
         </div>
 
+        <h1 className="font-bold text-4xl mb-4">Analytics</h1>
+        <div>
+          {analytics.map((data)=>(
+            <div key={data.platform} className="mb-4 p-4 bg-white shadow-md rounded">
+              <p>Platform:{data.platform}</p>
+              <p>Engagements: {data.engagements}</p>
+              <p>Reach:{data.reach}</p>
+            </div>
+          ))}
+        </div>
+
     </div>
   )
 }
