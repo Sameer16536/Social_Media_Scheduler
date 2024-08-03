@@ -1,5 +1,6 @@
 
 import './App.css'
+import Dashboard from './components/Dashboard'
 import ScheduleForm from './components/ScheduleForm'
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
 
   return (
     <>
-      <ScheduleForm />
+      {/* <ScheduleForm /> */}
+      <Dashboard />
     </>
   )
 }
